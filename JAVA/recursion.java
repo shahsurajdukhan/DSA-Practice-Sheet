@@ -39,15 +39,30 @@
 
 // let's now solve countdown with recursion
 
+// public class recursion {
+//     static void countdown(int n) {
+//         if (n > 0) {
+//             System.out.println(n + " ");
+//             countdown(n - 1);
+//         } 
+//     }
+
+//     public static void main(String[] args) {
+//         countdown(10);
+//     }
+// }
+
+// let's now solve the factorial problem by self knowledge
 public class recursion {
-    static void countdown(int n) {
-        if (n > 0) {
-            System.out.println(n + " ");
-            countdown(n - 1);
-        } 
+    static int Factoriall(int n) {
+        if(n>1) {
+        return   n * Factoriall(n - 1); }
+        else {
+            return 1;
+        }
     }
 
     public static void main(String[] args) {
-        countdown(10);
+       System.out.println ("Factorial of 3 is " + Factoriall(5));
     }
 }
