@@ -21,19 +21,33 @@
     // }
 
 // let's do one infinite recursion problem
+// public class recursion {
+//     public static int sum(int start, int end) {
+//         if (end > start) {
+//         return end + sum(start, end -1);
+//         }
+//         else {
+//             return end;
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         int result = sum(5,10);
+//         System.out.println(result);
+//     }
+// }
+
+// let's now solve countdown with recursion
+
 public class recursion {
-    public static int sum(int start, int end) {
-        if (end > start) {
-        return end + sum(start, end -1);
-        }
-        else {
-            return end;
-        }
+    static void countdown(int n) {
+        if (n > 0) {
+            System.out.println(n + " ");
+            countdown(n - 1);
+        } 
     }
 
     public static void main(String[] args) {
-        int result = sum(5,10);
-        System.out.println(result);
+        countdown(10);
     }
 }
-
