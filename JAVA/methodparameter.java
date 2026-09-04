@@ -17,18 +17,24 @@
 
 // Now we are going to learn about multiple parameters in the same method it's the same with the separated comma values.
 
-import java.util.jar.Attributes.Name;
+// 
+
+
+// Now we are going to learn about parameters in methods with if...else condition
 
 public class methodparameter {
-    static void NameParameter(String firstname, int age) {
-        System.out.println("Hi " + firstname + "! You are " + age + " Years old! :)");
-
+    static void CheckAge(int age) {
+        if (age >= 18) {
+            System.out.println("You are an Adult! Hehe");
+        }
+        else {
+            System.out.println("You are a Minor Kid! Go Study:)");
+        }
     }
 
     public static void main(String[] args) {
-        NameParameter("Suraj", 12);
-        NameParameter("Dukhan", 54);
-        NameParameter("Bhagmati", 47);
-
+        CheckAge(52);
+        CheckAge(18);
+        CheckAge(12);
     }
 }
