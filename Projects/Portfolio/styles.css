@@ -127,7 +127,7 @@ h1 {
 .portrait {
   display: block;
   width: 154px;
-  height: 154px;
+  height: 175px;
   object-fit: cover;
   border-radius: 4px;
   margin-top: 18px;
