@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suraj Shah</title>
+    <meta
+      name="description"
+      content="Devanshu Sharma builds distributed systems, databases, backend infrastructure, and developer-facing tools."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <article class="sheet" aria-label="Devanshu Sharma portfolio">
+        <nav class="topnav" aria-label="Primary navigation">
+          <a class="active" href="/">Devanshu Sharma</a>
+          <a href="#writing">Writing</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <header class="intro">
+          <h1>Suraj Shah</h1>
+          <p class="subname">Systems Software Engineer</p>
+          <p class="summary">
+            Building distributed systems, backend infrastructure, databases, and developer-facing tools.
+          </p>
+          <p class="quicklinks">
+            Links:
+            <a href="mailto:surajsah1903@gmail.com">Email</a>
+            <a href="https://github.com/shahsurajdukhan">GitHub</a>
+            <a href="https://www.linkedin.com/in/shah-suraj-dukhan-385160260/">LinkedIn</a>
+          </p>
+          <img class="portrait" src="./assets/Suraj.jpg" alt="Suraj Shah" />
+        </header>
+
+        <section id="about">
+          <h2>About</h2>
+          <div class="copy">
+            <p>
+              I care most about accuracy in distributed systems, databases, and concurrency. Tiny details decide
+              whether a system stays correct or quietly falls apart.
+            </p>
+            <p>
+              Currently, I am an intern at <a href="https://clockworklabs.io/">Clockwork Labs</a>, where I am
+              building <a href="https://spacetimedb.com/">SpacetimeDB</a>, a distributed real-time database that
+              combines the database, application server, and synchronization layers into one high-performance
+              environment.
+            </p>
+            <p>
+              I have also worked on scheduling performance and security at <a href="https://cal.com/">Cal.com</a>
+              and on GPU attestation and deterministic evidence pipelines at
+              <a href="https://ashibaresearch.com/">Ashiba Research</a>. I have the most respect for code with
+              clear, unambiguous, and explicit invariants.
+            </p>
+            <p>
+              Right now, I am drawn to real-time infrastructure, distributed databases, backend performance, open
+              source systems software, indexing, search, schema design, correctness, and technical writing that
+              makes complex systems easier to understand.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <div class="entries">
+            <div class="entry">
+              <p class="time">Jun 2026 - Present</p>
+              <div>
+                <h3>Software Engineer Intern, Clockwork Labs</h3>
+                <ul>
+                  <li>Developing SpacetimeDB, a distributed real-time database combining storage, application logic, and synchronization.</li>
+                  <li>Improving correctness, scalability, and low-latency access for open-source multiplayer and collaborative infrastructure.</li>
+                  <li>Writing practical technical material that helps developers understand real-time and distributed systems.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="entry">
+              <p class="time">May 2026 - Jun 2026</p>
+              <div>
+                <h3>Research Engineer Intern, Ashiba Research</h3>
+                <ul>
+                  <li>Built ARC, a deterministic verification system for GPU telemetry, attestation tokens, and deployment logs.</li>
+                  <li>Engineered NVIDIA attestation checks with nonce-based freshness guarantees for GPU identity claims.</li>
+                  <li>Designed a canonical evidence pipeline across nvidia-smi, NVML, DCGM, OTEL spans, CloudTrail, and NVIDIA EAT JWTs.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="entry">
+              <p class="time">Jun 2025 - Oct 2025</p>
+              <div>
+                <h3>Software Engineer Intern, Cal.com</h3>
+                <ul>
+                  <li>Improved reliability, performance, and security across high-traffic booking flows.</li>
+                  <li>Replaced O(n²) scheduling logic with faster sorting, early-exit scans, and two-pointer techniques.</li>
+                  <li>Strengthened conflict detection, availability filtering, cross-locale correctness, and reviewed 200+ PRs.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="entry">
+            <p class="time">2022 - 2026</p>
+            <div>
+              <h3>B.Tech in Computer Science and Engineering</h3>
+              <p class="muted">Graphic Era Hill University, Dehradun</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Selected Work</h2>
+          <div class="entries">
+            <div class="entry">
+              <p class="time">2026</p>
+              <div>
+                <h3>Distributed Search Engine</h3>
+                <p class="muted">Go, etcd, Redis, Bleve, embeddings, Docker</p>
+                <p>Built a sharded search system indexing 24K+ Wikipedia documents with 28ms p99 latency at 7K+ QPS.</p>
+              </div>
+            </div>
+            <div class="entry">
+              <p class="time">2026</p>
+              <div>
+                <h3>Diffo: Git-like Schema Versioning</h3>
+                <p class="muted">Go, PostgreSQL, pgx, libpg_query, graph algorithms</p>
+                <p>Built a commit-DAG-based schema versioning system with deterministic ancestry and structured merges.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Skills</h2>
+          <p class="skills">
+            C++ / Go / SQL / Distributed Systems / REST APIs / Concurrency / gRPC / PostgreSQL / Redis / etcd /
+            MongoDB / Docker / Git / Linux / Bleve / pgx / libpg_query
+          </p>
+        </section>
+
+        <section id="writing">
+          <h2>Writing</h2>
+          <div class="links">
+            <a href="https://medium.com/@devanshusharma658/the-talk-of-the-trillions-e5ce2d07c616">The talk of the trillions</a>
+            <a href="https://medium.com/@devanshusharma658/agent-sandboxes-at-scale-a-distributed-systems-design-for-ai-driven-development-3765f4a9460c">Agent Sandboxes at Scale</a>
+            <a href="https://medium.com/@devanshusharma658/i-built-git-for-database-schemas-f259ce3d3cc5">I built Git for database schemas</a>
+            <a href="https://medium.com/@devanshusharma658/building-a-high-performance-distributed-search-system-for-10-000-qps-240e5ce48016">Building a High-Performance Distributed Search System</a>
+          </div>
+        </section>
+
+        <section>
+          <h2>Links</h2>
+          <div class="links">
+            <a href="mailto:devanshusharma658@gmail.com">devanshusharma658@gmail.com</a>
+            <a href="https://github.com/Devanshusharma2005">GitHub</a>
+            <a href="https://www.linkedin.com/in/devanshu-sharma-a1baaa243">LinkedIn</a>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
