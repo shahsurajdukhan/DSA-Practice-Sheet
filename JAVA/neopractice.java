@@ -1,5 +1,32 @@
+import java.util.Scanner;
+
 public class neopractice {
-    
+    public static void main(String[] args) {
+        // String name = "JaVa";
+
+        //     System.out.println(name.toUpperCase());
+        //     System.out.println(name.toLowerCase());
+        //     System.out.println(name.length());
+        //     System.out.println(name.charAt(2));
+        // Scanner suraj = new Scanner(System.in);
+
+        // int number = suraj.nextInt();
+        // if (number > 0) {
+        //     System.out.println("Positive");
+        // }
+        // else if (number < 0) {
+        //     System.out.println("Negative");
+        // }
+        // else if (number == 0) {
+        //     System.out.println ("Zero");
+        // }
+        
+        for (int i=1; i<= 10; i++ ) {
+            System.out.println(i);
+        }
+
+
+    }
 }
 
 
@@ -82,6 +109,13 @@ ex : int age = 20;
             6. toString()
 
 
+
+String name = "Java";
+
+System.out.println(name.toUpperCase());
+System.out.println(name.toLowerCase());
+System.out.println(name.lenght());
+System.out.println(name.charAt(2));
 
 
 
