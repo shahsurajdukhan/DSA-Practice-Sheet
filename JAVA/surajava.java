@@ -93,10 +93,12 @@ public class surajava {
 
         int sum = angle1 + angle2 + angle3;
 
-        if (sum == 180) {
+        // don't forget to handle the edge case where every angle should be greater than zero.
+
+        if (sum == 180 && angle1!= 0 && angle2 !=0 && angle3 !=0 ) {
             System.out.println("Valid triangle can be formed from these 3 angles.");
         } else {
-            System.out.println("Valid triangle is not valid since sum of all the angles is not 180.");
+            System.out.println("Valid triangle is not valid since sum of all the angles is not 180 or anyone angle is ZERO.");
         }
     }
 }
