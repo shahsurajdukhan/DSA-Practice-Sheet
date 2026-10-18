@@ -54,21 +54,49 @@
 
 // Take a user input which is an integer. if the input value is even or odd.
 
-import java.util.Scanner;
+//import java.util.Scanner;
+//
+//public class surajava {
+//    static void main() {
+//        int input;
+//        System.out.print("Enter your number: ");
+//        Scanner dock = new Scanner(System.in);
+//        input = dock.nextInt();
+//        if (input % 2 == 0) {
+//            System.out.println("Given Number is Even in Nature");
+//        } else {
+//            System.out.println("Given number is Odd in Nature");
+//        }
+//
+//    }
+//
+//
+//}
 
+
+// given the 3 angles of a triangle.
+// you need to check whether
+// a valid triangle can be formed from those 3 angles.
+
+import java.util.Scanner;
 public class surajava {
     static void main() {
-        int input;
-        System.out.print("Enter your number: ");
+
+        int angle1,angle2,angle3;
         Scanner dock = new Scanner(System.in);
-        input = dock.nextInt();
-        if (input % 2 == 0) {
-            System.out.println("Given Number is Even in Nature");
+        System.out.println("Enter the value of 1st angle");
+        angle1 = dock.nextInt();
+        System.out.println("Enter the value of 2nd angle");
+        angle2 = dock.nextInt();
+        System.out.println("Enter the value of 3rd angle");
+        angle3 = dock.nextInt();
+
+        int sum = angle1 + angle2 + angle3;
+
+        if (sum == 180) {
+            System.out.println("Valid triangle can be formed from these 3 angles.");
         } else {
-            System.out.println("Given number is Odd in Nature");
+            System.out.println("Valid triangle is not valid since sum of all the angles is not 180.");
         }
-
     }
-
-
 }
