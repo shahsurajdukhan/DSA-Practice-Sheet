@@ -1,27 +1,27 @@
-//class Student {
-//
-//        String name;
-//        int age;
-//
-//        // constructor
-//        Student() {
-//            name = "Suraj Shah";
-//            age = 23;
-//        }
-//
-//        void display() {
-//            System.out.println(name);
-//            System.out.println(age);
-//        }
-//}
-//
-//public class consexample {
-//    static void main() {
-//        Student s1 = new Student();
-//        s1.display();
-//    }
-//
-//}
+class Student {
+
+        String name;
+        int age;
+
+        // constructor
+        Student() {
+            name = "Suraj Shah";
+            age = 23;
+        }
+
+        void display() {
+            System.out.println(name);
+            System.out.println(age);
+        }
+}
+
+public class consexample {
+    static void main() {
+        Student s1 = new Student();
+        s1.display();
+    }
+
+}
 
 
 // Constructor Overloading
