@@ -36,21 +36,45 @@ import java.io.IOException;
 // }
 
 // Reading data from a file
-import java.io.FileReader;
-import java.io.EOFException;
+// import java.io.FileReader;
+// import java.io.EOFException;
+
+// public class FileWriterr {
+//     public static void main(String[] args) {
+//         try {
+//             FileReader reader = new FileReader("student.txt");
+
+//             int character;
+
+//             while ((character = reader.read()) != -1) {
+//                 System.out.print((char) character);
+//             }
+
+//             reader.close();
+//         } catch (IOException e) {
+//             System.out.println(e.getMessage());
+//         }
+//     }
+// }
+
+// Reading a file using scanner class
+
+import java.io.File;
+import java.util.Scanner;
 
 public class FileWriterr {
     public static void main(String[] args) {
         try {
-            FileReader reader = new FileReader("student.txt");
+            File file = new File("student.txt");
 
-            int character;
+            Scanner sc = new Scanner(file);
 
-            while ((character = reader.read()) != -1) {
-                System.out.print((char) character);
+            while (sc.hasNextLine()) {
+                String data = sc.nextLine();
+                System.out.println(data);
             }
 
-            reader.close();
+            sc.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
