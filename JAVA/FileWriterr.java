@@ -20,15 +20,37 @@ import java.io.IOException;
 // }
 
 // Now updating the file
-public class FileWriterr {
+// public class FileWriterr {
 
+//     public static void main(String[] args) {
+//         try {
+//             FileWriter writer = new FileWriter("student.txt", true);
+//             writer.write("\nCity : Ahmedabad");
+//             writer.write("\nFav : Main tera e blood goriye tu backbone jatt di");
+//             writer.close();
+//             System.out.println("Data Appended successfully!");
+//         } catch (IOException e) {
+//             System.out.println(e.getMessage());
+//         }
+//     }
+// }
+
+// Reading data from a file
+import java.io.FileReader;
+import java.io.EOFException;
+
+public class FileWriterr {
     public static void main(String[] args) {
         try {
-            FileWriter writer = new FileWriter("student.txt", true);
-            writer.write("\nCity : Ahmedabad");
-            writer.write("\nFav : Main tera e blood goriye tu backbone jatt di");
-            writer.close();
-            System.out.println("Data Appended successfully!");
+            FileReader reader = new FileReader("student.txt");
+
+            int character;
+
+            while ((character = reader.read()) != -1) {
+                System.out.print((char) character);
+            }
+
+            reader.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
