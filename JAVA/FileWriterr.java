@@ -59,23 +59,57 @@ import java.io.IOException;
 
 // Reading a file using scanner class
 
-import java.io.File;
-import java.util.Scanner;
+// import java.io.File;
+// import java.util.Scanner;
+
+// public class FileWriterr {
+//     public static void main(String[] args) {
+//         try {
+//             File file = new File("student.txt");
+
+//             Scanner sc = new Scanner(file);
+
+//             while (sc.hasNextLine()) {
+//                 String data = sc.nextLine();
+//                 System.out.println(data);
+//             }
+
+//             sc.close();
+//         } catch (IOException e) {
+//             System.out.println(e.getMessage());
+//         }
+//     }
+// }
+
+// Text file handling 
+// import java.io.BufferedWriter;
+
+// public class FileWriterr {
+//     public static void main(String[] args) {
+//         try (BufferedWriter writer = new BufferedWriter(new FileWriter("notes.txt"))) {
+//             writer.write("Learning java File Handling");
+//             writer.newLine();
+//             writer.write("This is my first text file.");
+
+//             System.out.println("File created Successfully");
+//         } catch (IOException e) {
+//             System.out.println(e.getMessage());
+//         }
+//     }
+// }
+
+import java.io.FileInputStream;
 
 public class FileWriterr {
     public static void main(String[] args) {
-        try {
-            File file = new File("student.txt");
+        try (FileInputStream input = new FileInputStream("image.web")) {
+            int data;
 
-            Scanner sc = new Scanner(file);
-
-            while (sc.hasNextLine()) {
-                String data = sc.nextLine();
-                System.out.println(data);
+            while ((data = input.read()) != -1) {
+                System.out.println(data + " ");
             }
-
-            sc.close();
         } catch (IOException e) {
+            System.out.println("Error Bhai");
             System.out.println(e.getMessage());
         }
     }
