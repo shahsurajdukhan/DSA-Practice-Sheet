@@ -19,19 +19,19 @@
 
 // 2. variable's local scope without initialization
 
-public class typesOfVar {
+// public class typesOfVar {
 
-    public void pupAge() {
-        int age=9;
-        age = age + 7;
-        System.out.println("Puppy age is : " + age);
-    }
+//     public void pupAge() {
+//         int age=9;
+//         age = age + 7;
+//         System.out.println("Puppy age is : " + age);
+//     }
 
-    public static void main(String[] args) {
-        typesOfVar test = new typesOfVar();
-        test.pupAge();
-    }
-}
+//     public static void main(String[] args) {
+//         typesOfVar test = new typesOfVar();
+//         test.pupAge();
+//     }
+// }
 
 // some important points to remeber about java Local variables
 
@@ -44,3 +44,44 @@ public class typesOfVar {
 // 5. Local variables are implemented at stack level internally.
 // 6. There is no default value for local variables, so local variables should be
 //    declared and an initial value should be assigned before the first use. 
+
+
+
+
+// Now, learning Java Instance Variables
+
+// 1. Instace variables are declared in a class, but outside a method, constructor, or any block.
+
+
+import java.io.*;
+
+public class typesOfVar {
+
+    public String name; // this instance variable is visible for any child class.
+
+    private double salary; // salary variable is visible in Employee class only.
+
+    public typesOfVar (String empName) {
+        // The Name variable is assigned in the constructor.
+
+        name = empName;
+    }
+        // salary variable is assigned a value
+        public void setSalary(double empSal) {
+            salary = empSal;
+        }
+
+        // this method prints the employee details
+        public void printEmp() {
+            System.out.println("name : " + name);
+            System.out.println("Salary :" + salary);
+        }
+
+        public static void main (String agrs [] ) {
+            typesOfVar empOne = new typesOfVar("Ransika");
+            empOne.setSalary(1000);
+            empOne.printEmp();
+
+        }
+    
+}
